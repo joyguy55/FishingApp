@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="Ryan Joyner" content="Back Packing">
+
+    <title>Canoe_Ca$he</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+</head>
+
+<body ng-app="ehikeApp" ng-controller="MainController">
+
+    <div class="container-fluid">
+        <!--Bootstrap container div -->
+
+        <div class=navbar-logo></div>
+
+        <div class=navbar-right>
+            <!--Bootstrap nav div -->
+            <ul>
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a ui-sref="store">Store</a></li>
+                <li><a ui-sref="ehike">eHike</a></li>
+            </ul>
+        </div>
+
+        <div data-ui-view="content"></div>
+
+    </div>
+
+    <script src="app/app.js"></script>
+    <script src="app/directive.js"></script>
+    <script src="app/geocontroller.js"></script>
+    <script src="app/isotopeinit.js"></script>
+
+</body>
+
+</html>
